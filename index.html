@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Quizzz</title>
+        <script src="script.js" charset="utf-8"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="header">
+                <h1>Quizzz</h1>
+        
+                <div id="question">
+                    <p class="quiz_desc">Pick an answer, and see when you are right or wrong !</p>
+                    <p class="category">Category : <span></span></p>
+                    <p class="difficulty">Difficulty : <span></span></p>
+                    <p class="count_down">Time remaining : <span></span></p>
+                    <h2 class="title"><span></span></h2>
+                    <ul class="answers">
+                    </ul>
+                </div>
+        
+                <div id="correct_answer">
+                </div>
+            </div>
+    
+            <button type="button" class="next_question" onclick="handleNextQuestionClick()">
+                Next question
+            </button>
+        </div>
+
+    </body>
+</html>
