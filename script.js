@@ -1,3 +1,8 @@
+/* 1 - Note that here there is no separation into different files, e.g. services, ...!
+ * I've a repo (https://github.com/abdelgrib/Candrafts/tree/master/03_client_web_react/src) where I separate things a bit better.
+ * 2 - It would have been interesting to implement the component pattern (and for data I'm using global not scoped variable).
+ */
+
 window.__state = {
   questions: [],
   currentQuestion: {
@@ -8,8 +13,7 @@ window.__state = {
     correctAnswer: "",
   },
   timeInSeconds: 20,
-  timeRemaining: 0,
-  currentCount: 0
+  timeRemaining: 0
 };
 
 const fetchQuestions = async number => {
@@ -27,8 +31,6 @@ const fetchQuestions = async number => {
   /* Here 'expected errors' are not handled for fetch API.
    * See gists TypeScript : https://gist.github.com/abdelgrib/853db27c0a3970169f9d1d63a6943c9b or JavaScript.
    */
-
-  /* async/await is now available in JavaScript ! */
 };
 
 const mapQuestions = response => {
